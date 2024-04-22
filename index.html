@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <title>Portfolio</title>
     
 </head>
@@ -19,23 +20,22 @@
     </nav>
 <main>        
     <div class="overlay hidden" style="display: block;"></div>
-    <section class="modal hidden" style="display: flex;">
-            <header class="section__title">
-                <h3 id="modal__title">Ateneo OrSem: O-idol</h3>
-                <button>
-                    <svg class="close" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48749 1.45538C3.51118 0.479067 1.92827 0.479067 0.95196 1.45538C-0.0243511 2.43169 -0.0243511 4.0146 0.95196 4.99091L6.57429 10.6132L0.951988 16.2355C-0.024323 17.2119 -0.0243226 18.7948 0.951988 19.7711C1.9283 20.7474 3.51121 20.7474 4.48752 19.7711L10.1098 14.1488L15.7321 19.7711C16.7084 20.7474 18.2913 20.7474 19.2677 19.7711C20.244 18.7948 20.244 17.2119 19.2677 16.2355L13.6454 10.6132L19.2677 4.99091C20.244 4.0146 20.244 2.43169 19.2677 1.45538C18.2914 0.479067 16.7085 0.479067 15.7322 1.45538L10.1098 7.07771L4.48749 1.45538Z" fill="#333333" fill-opacity="0.5"></path>
-                    </svg>
-                </button>
-            </header>
-            <div class="content">
-                <div id="modal__images"><img src="./images/portfolio/idol-1.jpg"><img src="./images/portfolio/idol-2.jpg"></div>
-                <h4>about the project</h4>
-                <p class="body" id="modal__description">As part of Ateneo’s online Orientation Seminar, O-idol is an initiative that showcases the talent of the 
-              incoming college freshmen. As a Documentations and Publication volunteer, I layouted some publication materials while 
-              following a brand manual and using a given set of assets. The branding for the event had a Y2K and kid-core aesthetic.</p>
-            </div>
-        </section>
+    <section class="modal hidden">
+                <header class="section__title">
+                    <h3 id="modal__title">Some pretty long title insert here</h3>
+                    <button>
+                        <svg class="close" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.48749 1.45538C3.51118 0.479067 1.92827 0.479067 0.95196 1.45538C-0.0243511 2.43169 -0.0243511 4.0146 0.95196 4.99091L6.57429 10.6132L0.951988 16.2355C-0.024323 17.2119 -0.0243226 18.7948 0.951988 19.7711C1.9283 20.7474 3.51121 20.7474 4.48752 19.7711L10.1098 14.1488L15.7321 19.7711C16.7084 20.7474 18.2913 20.7474 19.2677 19.7711C20.244 18.7948 20.244 17.2119 19.2677 16.2355L13.6454 10.6132L19.2677 4.99091C20.244 4.0146 20.244 2.43169 19.2677 1.45538C18.2914 0.479067 16.7085 0.479067 15.7322 1.45538L10.1098 7.07771L4.48749 1.45538Z" fill="#333333" fill-opacity="0.5"/>
+                        </svg>
+                    </button>
+                </header>
+                <div class="content">
+                    <div id="modal__images"></div>
+                    <h4>about the project</h4>
+                    <p class="body" id="modal__description"></p>
+                </div>
+            </section>
+    
     <section class="home" id="home">
             
         </section>
@@ -55,11 +55,15 @@
                         </svg>
                     </div>
                 </div     
-            </div>
-        
+            </div
             
         </section>
     </main>
+    <script src="./js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     
 <!--     <img src="pixel_image.png.jpg" alt="Pixel Art Image"> -->
 
