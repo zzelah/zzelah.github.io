@@ -17,7 +17,7 @@ html, body {
   --background: #F8F8F8;
   --background-2: #F3F3F3;
   --text: #23292D;
-  --gradient-color: linear-gradient(150deg, #4d1d8a, #be38fb 75%);
+  --gradient-color: linear-gradient(150deg, #8332a8, #b967f0 75%);
   min-height: 100%;
   background: var(--background-2);
   color: var(--color);
@@ -150,7 +150,7 @@ section {
 }
 
 section .section__title {
-  background: #4d1d8a;
+  background: #b967f0;
   width: 100%;
   text-align: center;
   padding: 0.5em;
@@ -467,5 +467,4 @@ section:not(.home, .portfolio) > .container {
   }
 }
 
-@media screen and (min-width: 730px)
 
