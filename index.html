@@ -36,13 +36,50 @@
                             <path d="M13.8524 11.0978C13.4977 11.0978 13.2037 10.9904 12.9704 10.7758C12.7464 10.5518 12.6344 10.2764 12.6344 9.94976C12.6344 9.62309 12.7464 9.35242 12.9704 9.13776C13.2037 8.91376 13.4977 8.80176 13.8524 8.80176C14.1977 8.80176 14.4824 8.91376 14.7064 9.13776C14.9304 9.35242 15.0424 9.62309 15.0424 9.94976C15.0424 10.2764 14.9304 10.5518 14.7064 10.7758C14.4824 10.9904 14.1977 11.0978 13.8524 11.0978Z"></path>
                         </svg>
                     </div>
-                </div
-                       
+                </div     
             </div>
+            <div id="popup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <img src="placeholder.jpg" alt="Popup Image" class="popup-image">
+                    <h3>Popup Title</h3>
+                    <p>This is a pop-up description.</p>
+                </div>
+</div>
             
         </section>
     </main>
     
 <!--     <img src="pixel_image.png.jpg" alt="Pixel Art Image"> -->
+<script>
+$(document).ready(function() {
+    $('.portfolio__card').click(function() {
+        // Fetch data from the clicked card
+        var imgSrc = $(this).find('.portfolio__image').attr('src');
+        var title = $(this).find('h3').text();
+        var description = "Details about " + title; // Modify as needed
+
+        // Set the content in the popup
+        $('#popup .popup-image').attr('src', imgSrc);
+        $('#popup .popup-title').text(title);
+        $('#popup .popup-description').text(description);
+
+        // Show the popup
+        $('#popup').fadeIn();
+    });
+
+    $('.close').click(function() {
+        $('#popup').fadeOut();
+    });
+
+    // Optional: close the popup when clicking outside of it
+    $(window).click(function(e) {
+        if ($(e.target).is('#popup')) {
+            $('#popup').fadeOut();
+        }
+    });
+});
+</script>
+
 </body>
 </html>
