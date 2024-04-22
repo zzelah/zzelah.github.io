@@ -113,6 +113,12 @@ main {
   margin: 0px auto;
   padding-bottom: 10%;
 }
+
+.home {
+    min-height: 100vh;
+    padding-top: 15vh;
+}
+
 section {
   height: -webkit-max-content;
   height: -moz-max-content;
