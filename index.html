@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Your Pixelized Website</title>
+    <title>Portfolio</title>
 </head>
 <body>
-    <!-- Your pixel art and content go here -->
-    <img src="pixel_image.png.jpg" alt="Pixel Art Image">
+    <button class="btn btn-secondary" id="darkModeToggle">Dark Mode</button>
+
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const bgIsLight = document.body.classList.contains('bg-light');
+            document.body.classList.toggle('bg-light', !bgIsLight);
+            document.body.classList.toggle('bg-dark', bgIsLight);
+            document.body.classList.toggle('text-light', bgIsLight);
+            document.body.classList.toggle('text-dark', !bgIsLight);
+        });
+    </script>
+
+<!--     <img src="pixel_image.png.jpg" alt="Pixel Art Image"> -->
 </body>
 </html>
