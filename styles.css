@@ -1,17 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@400;500;700;800&family=Raleway:wght@400;500;600&display=swap");
-@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: 200ms ease-in;
-  transition: 200ms ease-in;
-}
 
-img, svg {
-  display: block;
-}
 
 html, body {
   --background: #F8F8F8;
