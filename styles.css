@@ -1,10 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@400;500;700;800&family=Raleway:wght@400;500;600&display=swap");
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
 * {
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: 200ms ease-in;
-    transition: 200ms ease-in;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
+}
+
+img, svg {
+  display: block;
 }
 
 html, body {
@@ -83,9 +89,9 @@ nav {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     position: absolute;
-    top: 50%;               /* Center vertically */
-    left: 50%;              /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the element by half of its width and height */
+    top: 50%;               
+    left: 50%;              
+    transform: translate(-50%, -50%); 
     width: fit-content;
     height: fit-content;
 }
@@ -139,33 +145,6 @@ section .section__title {
     padding: 0.5em;
 }
 
-@media screen and (min-width: 550px)
-section .container {
-    margin: 40px auto 4em auto;
-    width: 80%;
-    height: 100%;
-}
 
-.portfolio .container {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[auto-fit];
-    grid-template-columns: repeat(auto-fit, 1fr);
-    grid-column-gap: 20px;
-    grid-auto-flow: column;
-    -ms-scroll-snap-type: x mandatory;
-    scroll-snap-type: x mandatory;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    overflow: scroll;
-    scroll-behavior: smooth;
-    padding-bottom: 1em;
-    margin: 40px auto 1em auto;
-}
 
  
