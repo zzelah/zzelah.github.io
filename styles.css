@@ -1,5 +1,4 @@
 
-
 html, body {
   --background: #F8F8F8;
   --background-2: #F3F3F3;
@@ -76,9 +75,9 @@ nav {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     position: absolute;
-    top: 50%;               
-    left: 50%;              
-    transform: translate(-50%, -50%); 
+    top: 50%;               /* Center vertically */
+    left: 50%;              /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the element by half of its width and height */
     width: fit-content;
     height: fit-content;
 }
@@ -115,6 +114,10 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+
+}
+
+
 
 
 
