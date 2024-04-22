@@ -129,21 +129,7 @@ section {
           align-items: center;
 }
 
-section:not(.home) {
-    border-radius: 15px;
-    overflow: hidden;
-    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-    background: var(--background);
-    margin-bottom: 3rem;
-}
 
-section .section__title {
-    background: #4d1d8a;
-    width: 100%;
-    text-align: center;
-    padding: 0.5em;
-}
 
 
 
