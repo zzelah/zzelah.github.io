@@ -20,7 +20,7 @@ nav {
     z-index: 1;
 }
 
-.nav__bar .title {
+/* .nav__bar .title {
     font: bold 0.8rem 'Poppins', sans-serif;
     color: var(--text);
     text-transform: uppercase;
@@ -33,6 +33,19 @@ nav {
     width: fit-content;
     height: -webkit-fit-content;
     height: -moz-fit-content;
+    height: fit-content;
+} */
+
+.nav__bar .title {
+    font: bold 0.8rem 'Poppins', sans-serif;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%;               /* Center vertically */
+    left: 50%;              /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the element by half of its width and height */
+    width: fit-content;
     height: fit-content;
 }
 
