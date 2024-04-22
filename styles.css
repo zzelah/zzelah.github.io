@@ -116,7 +116,7 @@ main {
 
 .home {
     min-height: 100vh;
-    padding-top: 15vh;
+    padding-top: 5vh;
 }
 
 section {
@@ -290,7 +290,7 @@ section:not(.home, .portfolio) > .container {
 .portfolio .portfolio__card a p {
   font-size: 0.9rem;
   font-family: 'DM Sans', sans-serif;
-  color: #f8f8f8;
+  color: #cb73f0;
   letter-spacing: 0.02em;
   font-weight: 500;
   margin-left: 1em;
