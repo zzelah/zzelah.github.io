@@ -1,86 +1,47 @@
 body {
-    h1 {
-    text-align: center;
-    color: gray;
-  }
-  h2 {
-    text-align: center;
-    color: gray;
-  }
+ background: #F8F8F8;
+ text: #23292D;
+ gradient-color: linear-gradient(150deg, #4d1d8a, #be38fb 75%);
+}
+div {
+    display: block;
+}
+nav {
+    background: var(--background-2);
+    position: fixed;
+    width: 100vw;
+    padding: 1.5rem 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
 }
 
-@green: #2ecc71;
-@lightgray: lightgray;
-@background: whitesmoke;
-
-.inactiveMixin {
-  content: "";
-  position: absolute;
-  display: block;
+.nav__bar .title {
+    font: bold 0.8rem 'Poppins', sans-serif;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: absolute;
+    inset: 0px;
+    margin: auto auto auto auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
 }
 
-.beforeAnimation {
-  transition: .2s cubic-bezier(.24, 0, .5, 1);
-}
 
-.afterAnimation {
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, .04), 0 4px 9px hsla(0, 0%, 0%, .13), 0 3px 3px hsla(0, 0%, 0%, .05);
-  transition: .35s cubic-bezier(.54, 1.60, .5, 1);
-}
 
-// Mobile Toggle Switch
-.toggleWrapper {
-  margin: auto;
-  padding: 20px;
-  width: 55px;
-  border: 1px solid @lightgray;
-  margin-top: 20px;
-  border-radius: 5px;
-  background: white;
-  input {
-    &.mobileToggle {
-      opacity: 0; // hides checkbox
-      position: absolute;
-      & + label {
-        position: relative;
-        display: inline-block;
-        user-select: none;
-        transition: .4s ease;
-        height: 30px;
-        width: 50px;
-        border: 1px solid #e4e4e4;
-        border-radius: 60px;
-        &:before {
-          .inactiveMixin;
-          .beforeAnimation;
-          height: 30px;
-          width: 51px;
-          top: 0;
-          left: 0;
-          border-radius: 30px;
-        }
-        &:after {
-          .inactiveMixin;
-          .afterAnimation;
-          background: @background;
-          height: 28px;
-          width: 28px;
-          top: 1px;
-          left: 0px;
-          border-radius: 60px;
-        }
-      }
-      // When Active
-      &:checked {
-        & + label:before {
-          background: @green; // Active Color
-          transition: width .2s cubic-bezier(0, 0, 0, .1);
-        }
-        & + label:after {
-          left: 54px - 30px;
-        }
-      }
-    }
-  }
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
- 
