@@ -178,7 +178,6 @@ section:not(.home, .portfolio) > .container {
   }
 }
 
-
 .portfolio .container {
   width: 100%;
   height: -webkit-fit-content;
@@ -195,10 +194,14 @@ section:not(.home, .portfolio) > .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: scroll;
+/*   overflow: scroll; */
   scroll-behavior: smooth;
   padding-bottom: 1em;
   margin: 40px auto 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center; /* Center the cards vertically */
 }
 
 .portfolio .portfolio__card {
