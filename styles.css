@@ -119,6 +119,20 @@ main {
     padding-top: 5vh;
 }
 
+.modal {
+    left: 25%;
+    width: 50%;
+}
+.modal {
+    position: fixed;
+    z-index: 2;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
 section {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -453,5 +467,5 @@ section:not(.home, .portfolio) > .container {
   }
 }
 
+@media screen and (min-width: 730px)
 
-   
