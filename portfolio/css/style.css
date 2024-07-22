@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hike-helper {
+    margin-top: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hike-helper label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+
+.hike-helper input[type="number"],
+.hike-helper input[type="range"] {
+    display: block;
+    margin: 0 auto 20px;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    padding: 5px;
+    width: fit-content;
+}
+
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+
+}
+
+
+.buttons button:hover {
+    background-color: #ddd;
+}
+
+.buttons button.active {
+    background-color: #4caf50;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+.images {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
